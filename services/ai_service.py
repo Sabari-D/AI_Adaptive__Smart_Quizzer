@@ -24,7 +24,7 @@
 # # --- NLP DEPENDENCY CHECK ---
 # try:
 #     nltk.data.find('tokenizers/punkt')
-# except nltk.downloader.DownloadError:
+# except Exception:
 #     print("Downloading NLTK 'punkt' data...")
 #     nltk.download('punkt')
 # # ----------------------------
@@ -202,7 +202,7 @@ class GeminiAPIError(Exception):
 # --- NLP DEPENDENCY CHECK ---
 try:
     nltk.data.find('tokenizers/punkt')
-except nltk.downloader.DownloadError:
+except Exception:
     print("Downloading NLTK 'punkt' data...")
     nltk.download('punkt')
 # ----------------------------
