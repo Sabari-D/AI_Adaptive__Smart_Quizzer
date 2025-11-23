@@ -24,7 +24,7 @@
 # # --- NLP DEPENDENCY CHECK ---
 # try:
 #     nltk.data.find('tokenizers/punkt')
-# except nltk.downloader.DownloadError:
+# except Exception:
 #     print("Downloading NLTK 'punkt' data...")
 #     nltk.download('punkt')
 # # ----------------------------
@@ -411,7 +411,7 @@ except Exception as e:
 try:
     # This check will be mostly handled by the Build Command NLTK download
     nltk.data.find('tokenizers/punkt')
-except nltk.downloader.DownloadError:
+except Exception:
     print("Downloading NLTK 'punkt' data...")
     nltk.download('punkt')
 # ----------------------------
