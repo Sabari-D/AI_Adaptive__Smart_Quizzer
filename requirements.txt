@@ -62,7 +62,7 @@ msgspec==0.19.0
 narwhals==2.5.0
 networkx==2.8.8
 nltk==3.9.1
-numpy==1.22.4 # Adjusted for stability with Scikit-learn/Scipy
+numpy==1.21.6 # Adjusted for stability with Scikit-learn/Scipy
 oauthlib==3.3.1
 openai==1.97.1
 opencv-python==4.6.0.66 # Downgraded for NumPy compatibility
