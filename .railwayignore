@@ -1,5 +1,0 @@
-# Ignore Node.js files/folders from previous attempts
-node_modules/
-package.json
-package-lock.json
-.npmrc
