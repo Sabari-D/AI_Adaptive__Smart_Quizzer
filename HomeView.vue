@@ -1,65 +1,3 @@
-<!-- <script setup lang="ts">
-import { useAuthStore } from '@/stores/auth'
-import { computed } from 'vue';
-
-// 1. Import and instantiate the store
-const authStore = useAuthStore()
-
-// 2. Create a computed property to check authentication status
-//    Note: Pinia state/getters are reactive and must be accessed with .value in setup()
-const isAuthenticated = computed(() => authStore.isAuthenticated)
-</script>
-
-<template>
-  <div class="home-container">
-    <h1 class="main-title">🧠 SmartQuizzer: Adaptive Learning Platform</h1>
-    <p class="tagline">Your personalized path to mastery, powered by AI.</p>
-    
-    <div class="cta-section">
-      <p v-if="!isAuthenticated">
-        To begin your adaptive learning journey, please **<router-link to="/login">Log In</router-link>** or **<router-link to="/register">Register</router-link>**.
-      </p>
-      <p v-else>
-        Welcome back! Visit your **<router-link to="/profile">Profile</router-link>** to set your learning preferences and start a new quiz.
-      </p>
-    </div>
-  </div>
-</template>
-
-<style scoped>
-.home-container {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.main-title {
-  font-size: 2.5rem;
-  color: #34495e; 
-  margin-bottom: 10px;
-}
-
-.tagline {
-  font-size: 1.2rem;
-  color: #7f8c8d;
-  margin-bottom: 30px;
-}
-
-.cta-section {
-  padding: 30px;
-  border: 1px solid #ecf0f1;
-  border-radius: 8px;
-  background-color: #fcfcfc;
-  display: inline-block;
-}
-
-.cta-section a {
-  color: #3498db; 
-  font-weight: bold;
-  text-decoration: none;
-}
-</style> -->
-
-
 
 
 <script setup lang="ts">
@@ -211,4 +149,5 @@ const isAuthenticated = computed(() => authStore.isAuthenticated)
     box-shadow: 0 2px 0 #219d5c;
     transform: translateY(6px); /* Press down */
 }
+
 </style>
